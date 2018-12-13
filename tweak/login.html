@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tweak</title>
+		<link href="css/main.css" rel="stylesheet" type="text/css"/>
+	</head>
+	
+	<body>
+		<div id="bg-wrapper">
+			<h1>Tweak</h1>
+			<div id="login-wrapper">
+				<input id="email" type="email" placeholder="Email..."/><br>
+				<input id="password" type="password" placeholder="Password..."/><br>
+				<button id="login-btn">Login</button>
+				<p>Don't have an account?</p><a href="register.html">Register here</a>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+			apiKey: "AIzaSyCQEdz9ctMySwT_DCOGf3pfueJiJ4IMz_o",
+			authDomain: "project5-9feb6.firebaseapp.com",
+			databaseURL: "https://project5-9feb6.firebaseio.com",
+			projectId: "project5-9feb6",
+			storageBucket: "gs://project5-9feb6.appspot.com",
+			messagingSenderId: "996131394834"
+			};
+			firebase.initializeApp(config);
+		</script>
+		<script src="js/auth.js"></script>
+	
+	</body>
+	
+</html>

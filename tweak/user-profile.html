@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tweak</title>
+		<link href="css/profile.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		
+		<div id="banner-wrapper">
+			<i id="menuToggle" class="fas fa-align-left"></i>
+			<h1>Tweak <input type="text" id="name-search"></textarea>
+			</h1>
+			<i class="fas fa-search" onclick="searchUser()"></i>
+		</div>
+		
+		<div id="side-menu">
+			<a class="btn-close" onclick="closeSideMenu()">&times;</a>
+			<img id="side-menu-profile-pic" src="css/profile.png">
+			<a href="profile.html">Profile</a>
+			<a href="index.html">Home</a>
+			<a href="settings.html">Setting</a>
+			<a onclick="logout()">Logout</a>
+				
+		</div>
+		
+		<div id="search-list-wrapper">
+			<ul id="search-ul">
+			<!--
+				<li>
+					<img id="searc-list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="searc-list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="searc-list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+			-->
+			</ul>
+		</div>
+		
+		<div id="blank-space"></div>
+		
+		<div id="profile-wrapper">
+			<img id="profile-img" src="css/profile.png">
+			<div id="name-wrapper">
+				<h1 id="name"></h1>
+				<i class="fas fa-user-plus"></i>
+			</div>
+			<h2 id="bio"></h2>
+			<button id="followorfollowing" onclick="followUser()"></button>
+			
+			<div id="blank-space"></div>
+			
+			<div id="social-wrapper">
+				<div id="numpost-wrapper">
+					<h1 id="posts"></h1>
+					<p>posts</p>
+				</div>
+				
+				<div id="follower-wrapper" onclick="showFollower()">
+					<h1 id="followers"></h1>
+					<p>followers</p>
+				</div>
+				
+				<div id="following-wrapper"  onclick="showFollowing()">
+					<h1 id="following"></h1>
+					<p>following</p>
+				</div>
+			</div>
+			<!--
+			<div id="input-wrapper">
+				<textarea id="newpost" placeholder="Type a post here..." rows="4" required></textarea>
+				<i onclick="upload()" class="fas fa-share-square"></i>
+			</div>
+			-->
+		</div>
+		
+		<div id="blank-space"></div>
+		
+		<div id="posts-wrapper">
+		<!--<div id="post-wrapper">
+			<div id="img-name-time-wrapper">
+				<img id="profile-img" src="css/profile.png">
+				<div id="name-time-wrapper">
+					<h1 id="user-name">JACK DANIELS</h1>
+					<p id="time-post">3 hours ago</p>
+				</div>
+				<i class="fas fa-heart"></i>
+				<i id="whoLikes">12</i>
+			</div>
+			
+			<h2 id="post">This is so lame!!!!!</h2>
+		</div>
+		
+		<div id="post-wrapper">
+			<div id="img-name-time-wrapper">
+				<img id="profile-img" src="css/profile.png">
+				<div id="name-time-wrapper">
+					<h1 id="user-name">JACK DANIELS</h1>
+					<p id="time-post">6 hours ago</p>
+				</div>
+				<i class="fas fa-heart"></i>
+				<i id="whoLikes">12</i>
+			</div>
+			
+			<h2 id="post">Maecenas eu lacus vitae eros scelerisque maximus. Sed id lectus tortor. Praesent rhoncus turpis at erat ornare 
+			malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec dapibus nisi, 
+			non posuere massa. Sed ornare mattis vehicula. Vestibulum a luctus elit.</h2>
+		</div>
+		
+		<div id="post-wrapper">
+			<div id="img-name-time-wrapper">
+				<img id="profile-img" src="css/profile.png">
+				<div id="name-time-wrapper">
+					<h1 id="user-name">JACK DANIELS</h1>
+					<p id="time-post">12 hours ago</p>
+				</div>
+				<i class="fas fa-heart"></i>
+				<i id="whoLikes">12</i>
+			</div>
+			
+			<h2 id="post">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer purus eros, 
+			elementum ut quam nec, dictum fermentum sem. Fusce tristique eros ornare ipsum euismod pretium. Sed consequat finibus massa, 
+			vel bibendum tortor egestas et. Ut congue nunc quis justo suscipit, sed tristique justo tristique. Pellentesque habitant morbi 
+			tristique senectus et netus et malesuada fames ac turpis egestas. In a est velit. Maecenas eu lacus vitae eros scelerisque maximus. 
+			Sed id lectus tortor. Praesent rhoncus turpis at erat ornare malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et 
+			ultrices posuere cubilia Curae; Donec nec dapibus nisi, non posuere massa. Sed ornare mattis vehicula. Vestibulum a luctus elit.</h2>
+		</div>
+		
+		<div id="post-wrapper">
+			<div id="img-name-time-wrapper">
+				<img id="profile-img" src="css/profile.png">
+				<div id="name-time-wrapper">
+					<h1 id="user-name">JACK DANIELS</h1>
+					<p id="time-post">12 hours ago</p>
+				</div>
+				<i class="fas fa-heart"></i>
+				<i id="whoLikes">12</i>
+			</div>
+			
+			<h2 id="post">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer purus eros, 
+			elementum ut quam nec, dictum fermentum sem. Fusce tristique eros ornare ipsum euismod pretium. Sed consequat finibus massa, 
+			vel bibendum tortor egestas et. Ut congue nunc quis justo suscipit, sed tristique justo tristique. Pellentesque habitant morbi 
+			tristique senectus et netus et malesuada fames ac turpis egestas. In a est velit. Maecenas eu lacus vitae eros scelerisque maximus. 
+			Sed id lectus tortor. Praesent rhoncus turpis at erat ornare malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et 
+			ultrices posuere cubilia Curae; Donec nec dapibus nisi, non posuere massa. Sed ornare mattis vehicula. Vestibulum a luctus elit.</h2>
+		</div>-->
+		</div>
+		
+		
+		
+		
+		
+		<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+			apiKey: "AIzaSyCQEdz9ctMySwT_DCOGf3pfueJiJ4IMz_o",
+			authDomain: "project5-9feb6.firebaseapp.com",
+			databaseURL: "https://project5-9feb6.firebaseio.com",
+			projectId: "project5-9feb6",
+			storageBucket: "gs://project5-9feb6.appspot.com",
+			messagingSenderId: "996131394834"
+			};
+			firebase.initializeApp(config);
+		</script>
+		<script src="js/auth.js"></script>
+		<script src="js/user-profile.js"></script>
+		
+	</body>
+</html>

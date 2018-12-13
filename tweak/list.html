@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tweak</title>
+		<link href="css/list.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		
+		<div id="banner-wrapper">
+			<i id="menuToggle" class="fas fa-align-left"></i>
+			<h1>Tweak <input type="text" id="name-search"></textarea>
+			</h1>
+			<i class="fas fa-search" onclick="searchUser()"></i>
+		</div>
+		
+		<div id="side-menu">
+			<a class="btn-close" onclick="closeSideMenu()">&times;</a>
+			<img id="side-menu-profile-pic" src="css/profile.png">
+			<a href="profile.html">Profile</a>
+			<a href="index.html">Home</a>
+			<a href="settings.html">Setting</a>
+			<a onclick="logout()">Logout</a>
+				
+		</div>
+		
+		<div id="search-list-wrapper">
+			<ul id="search-ul">
+			<!--
+				<li>
+					<img id="searc-list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="searc-list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="searc-list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+			-->
+			</ul>
+		</div>
+		
+		<div id="blank-space"></div>
+		
+		<div id="user-list-wrapper">
+			<ul id="list-ul">
+			<!--
+				<li>
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li>
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li>
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				
+				<li>
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li>
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li>
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				<li class="removable">
+					<img id="list-img" src="css/profile.png">
+					<p id="search-name">Name Please</p>
+				</li>
+				-->
+			
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+			apiKey: "AIzaSyCQEdz9ctMySwT_DCOGf3pfueJiJ4IMz_o",
+			authDomain: "project5-9feb6.firebaseapp.com",
+			databaseURL: "https://project5-9feb6.firebaseio.com",
+			projectId: "project5-9feb6",
+			storageBucket: "gs://project5-9feb6.appspot.com",
+			messagingSenderId: "996131394834"
+			};
+			firebase.initializeApp(config);
+		</script>
+		<script src="js/auth.js"></script>
+		<script src="js/list.js"></script>
+		
+	</body>
+</html>
